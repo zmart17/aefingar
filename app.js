@@ -1203,10 +1203,10 @@ function importJSONFile(file) {
           ex.unit = normalizeUnit(ex.unit, ex.repsOnly);
         }
       }
-      state.sessions = sessions;
+      const added = mergeSessions(sessions);
       saveSessions();
       localStorage.setItem(SEED_FLAG, "1");
-      toast(`Flutt inn: ${sessions.length} lotur`);
+      toast(`Flutt inn: ${added} nýjar lotur`);
       updateScheduleHint();
       renderForm();
       if (state.tab === "tolfraedi") renderStats();
@@ -1219,11 +1219,54 @@ function importJSONFile(file) {
   reader.readAsText(file);
 }
 
+function sessionKey(s) {
+  return s.id || `${s.date}-${s.dayType}`;
+}
+
+// Bætir við lotum sem vantar (eftir id eða dagsetningu+A/B), skrifar ekki yfir neitt.
+function mergeSessions(incoming) {
+  const ids = new Set(state.sessions.map(sessionKey));
+  const dayKeys = new Set(state.sessions.map((s) => `${s.date}|${s.dayType}`));
+  let added = 0;
+  for (const s of incoming) {
+    if (ids.has(sessionKey(s)) || dayKeys.has(`${s.date}|${s.dayType}`)) continue;
+    state.sessions.push(s);
+    ids.add(sessionKey(s));
+    dayKeys.add(`${s.date}|${s.dayType}`);
+    added++;
+  }
+  state.sessions.sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0));
+  return added;
+}
+
+const SEED_MERGE_FLAG = "snorri-aefingar-seed-merge-v2";
+
+async function mergeMissingSeed() {
+  if (localStorage.getItem(SEED_MERGE_FLAG)) return;
+  try {
+    const res = await fetch("seed-data.json", { cache: "no-store" });
+    if (!res.ok) return;
+    const data = await res.json();
+    const list = (data.sessions || []).map((s) => {
+      for (const ex of s.exercises || []) ex.unit = normalizeUnit(ex.unit, ex.repsOnly);
+      return s;
+    });
+    const added = mergeSessions(list);
+    if (added) {
+      saveSessions();
+      toast(`Bætti við ${added} lotum sem vantaði`);
+    }
+    localStorage.setItem(SEED_MERGE_FLAG, "1");
+  } catch (e) {
+    console.warn("Seed merge failed", e);
+  }
+}
+
 async function seedIfNeeded() {
-  if (localStorage.getItem(SEED_FLAG) && state.sessions.length) return;
+  if (localStorage.getItem(SEED_FLAG) && state.sessions.length) return mergeMissingSeed();
   if (state.sessions.length) {
     localStorage.setItem(SEED_FLAG, "1");
-    return;
+    return mergeMissingSeed();
   }
   try {
     const res = await fetch("seed-data.json", { cache: "no-store" });
@@ -1238,6 +1281,7 @@ async function seedIfNeeded() {
       state.sessions = data.sessions;
       saveSessions();
       localStorage.setItem(SEED_FLAG, "1");
+      localStorage.setItem(SEED_MERGE_FLAG, "1");
       toast(`Seed: ${data.sessions.length} lotur`);
     }
   } catch (e) {
