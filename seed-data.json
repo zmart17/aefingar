@@ -1,0 +1,1094 @@
+{
+  "sessions": [
+    {
+      "id": "A1-2026-09-07",
+      "date": "2026-09-07",
+      "dayType": "A",
+      "lota": 1,
+      "exercises": [
+        {
+          "name": "Bekkpressa",
+          "sets": [
+            {
+              "weight": 50.0,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "weight": 50.0,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "weight": 50.0,
+              "reps": 10,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        },
+        {
+          "name": "Incline DB press",
+          "sets": [
+            {
+              "weight": 6.0,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "weight": 8.0,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "weight": 8.0,
+              "reps": 10,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        },
+        {
+          "name": "Overhead press",
+          "sets": [
+            {
+              "weight": 25.0,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "weight": 25.0,
+              "reps": 8,
+              "done": true
+            },
+            {
+              "weight": 25.0,
+              "reps": 10,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        },
+        {
+          "name": "Lateral raises",
+          "sets": [
+            {
+              "weight": 6.0,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "weight": 8.0,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "weight": 8.0,
+              "reps": 8,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        },
+        {
+          "name": "Triceps pushdown",
+          "sets": [
+            {
+              "weight": 30.0,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "weight": 30.0,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "weight": 30.0,
+              "reps": 10,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        },
+        {
+          "name": "Close-grip/diamond",
+          "sets": [
+            {
+              "weight": 25.0,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "weight": 25.0,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "weight": 25.0,
+              "reps": 10,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        },
+        {
+          "name": "Total Abdominal (Technogym)",
+          "sets": [
+            {
+              "weight": 0.0,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "weight": 32.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 32.0,
+              "reps": 12,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        }
+      ]
+    },
+    {
+      "id": "B1-2026-09-09",
+      "date": "2026-09-09",
+      "dayType": "B",
+      "lota": 1,
+      "exercises": [
+        {
+          "name": "Lat pulldown",
+          "sets": [
+            {
+              "weight": 40.0,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "weight": 40.0,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "weight": 40.0,
+              "reps": 12,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        },
+        {
+          "name": "Seated row",
+          "sets": [
+            {
+              "weight": 40.0,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "weight": 40.0,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "weight": 40.0,
+              "reps": 12,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        },
+        {
+          "name": "Face pulls",
+          "sets": [
+            {
+              "weight": 25.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 25.0,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "weight": 20.0,
+              "reps": 12,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        },
+        {
+          "name": "Rear delt fly",
+          "sets": [
+            {
+              "weight": 8.0,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "weight": 5.0,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "weight": 8.0,
+              "reps": 8,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        },
+        {
+          "name": "Bicep curls",
+          "sets": [
+            {
+              "weight": 8.0,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "weight": 8.0,
+              "reps": 8,
+              "done": true
+            },
+            {
+              "weight": 8.0,
+              "reps": 8,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        },
+        {
+          "name": "Triceps kickback",
+          "sets": [
+            {
+              "weight": 8.0,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "weight": 8.0,
+              "reps": 8,
+              "done": true
+            },
+            {
+              "weight": 8.0,
+              "reps": 10,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        },
+        {
+          "name": "Bird dog",
+          "sets": [
+            {
+              "weight": 1.0,
+              "reps": 8,
+              "done": true
+            },
+            {
+              "weight": 1.0,
+              "reps": 8,
+              "done": true
+            },
+            {
+              "weight": 1.0,
+              "reps": 12,
+              "done": true
+            }
+          ],
+          "unit": "reps",
+          "repsOnly": true
+        }
+      ]
+    },
+    {
+      "id": "A2-2026-09-11",
+      "date": "2026-09-11",
+      "dayType": "A",
+      "lota": 2,
+      "exercises": [
+        {
+          "name": "Bekkpressa",
+          "sets": [
+            {
+              "weight": 50.0,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "weight": 50.0,
+              "reps": 8,
+              "done": true
+            },
+            {
+              "weight": 50.0,
+              "reps": 10,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        },
+        {
+          "name": "Incline DB press",
+          "sets": [
+            {
+              "weight": 8.0,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "weight": 8.0,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "weight": 8.0,
+              "reps": 8,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        },
+        {
+          "name": "Overhead press",
+          "sets": [
+            {
+              "weight": 25.0,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "weight": 25.0,
+              "reps": 8,
+              "done": true
+            },
+            {
+              "weight": 25.0,
+              "reps": 8,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        },
+        {
+          "name": "Lateral raises",
+          "sets": [
+            {
+              "weight": 8.0,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "weight": 8.0,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "weight": 8.0,
+              "reps": 8,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        },
+        {
+          "name": "Triceps pushdown",
+          "sets": [
+            {
+              "weight": 30.0,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "weight": 30.0,
+              "reps": 8,
+              "done": true
+            },
+            {
+              "weight": 30.0,
+              "reps": 8,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        },
+        {
+          "name": "Close-grip/diamond",
+          "sets": [
+            {
+              "weight": 25.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 25.0,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "weight": 25.0,
+              "reps": 8,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        },
+        {
+          "name": "Total Abdominal (Technogym)",
+          "sets": [
+            {
+              "weight": 30.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 30.0,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "weight": 30.0,
+              "reps": 10,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        }
+      ]
+    },
+    {
+      "id": "B2-2026-09-14",
+      "date": "2026-09-14",
+      "dayType": "B",
+      "lota": 2,
+      "exercises": [
+        {
+          "name": "Lat pulldown",
+          "sets": [
+            {
+              "weight": 40.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 40.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 45.0,
+              "reps": 10,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        },
+        {
+          "name": "Seated row",
+          "sets": [
+            {
+              "weight": 45.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 45.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 50.0,
+              "reps": 24,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        },
+        {
+          "name": "Face pulls",
+          "sets": [
+            {
+              "weight": 20.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 20.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 20.0,
+              "reps": 12,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        },
+        {
+          "name": "Rear delt fly",
+          "sets": [
+            {
+              "weight": 8.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 8.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 8.0,
+              "reps": 8,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        },
+        {
+          "name": "Bicep curls",
+          "sets": [
+            {
+              "weight": 8.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 8.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 8.0,
+              "reps": 12,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        },
+        {
+          "name": "Triceps kickback",
+          "sets": [
+            {
+              "weight": 8.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 8.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 8.0,
+              "reps": 12,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        },
+        {
+          "name": "Bird dog",
+          "sets": [
+            {
+              "weight": 8.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 8.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 30.0,
+              "reps": 12,
+              "done": true
+            }
+          ],
+          "unit": "reps",
+          "repsOnly": true
+        }
+      ]
+    },
+    {
+      "id": "A3-2026-09-16",
+      "date": "2026-09-16",
+      "dayType": "A",
+      "lota": 3,
+      "exercises": [
+        {
+          "name": "Bekkpressa",
+          "sets": [
+            {
+              "weight": 50.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 50.0,
+              "reps": 13,
+              "done": true
+            },
+            {
+              "weight": 50.0,
+              "reps": 7,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        },
+        {
+          "name": "Incline DB press",
+          "sets": [
+            {
+              "weight": 8.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 10.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 10.0,
+              "reps": 12,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        },
+        {
+          "name": "Overhead press",
+          "sets": [
+            {
+              "weight": 25.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 30.0,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "weight": 15.0,
+              "reps": 6,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        },
+        {
+          "name": "Lateral raises",
+          "sets": [
+            {
+              "weight": 8.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 6.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 8.0,
+              "reps": 12,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        },
+        {
+          "name": "Triceps pushdown",
+          "sets": [
+            {
+              "weight": 30.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 30.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 35.0,
+              "reps": 12,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        },
+        {
+          "name": "Close-grip/diamond",
+          "sets": [
+            {
+              "weight": 25.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 30.0,
+              "reps": 8,
+              "done": true
+            },
+            {
+              "weight": 30.0,
+              "reps": 12,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        },
+        {
+          "name": "Total Abdominal (Technogym)",
+          "sets": [
+            {
+              "weight": 30.0,
+              "reps": 16,
+              "done": true
+            },
+            {
+              "weight": 30.0,
+              "reps": 14,
+              "done": true
+            },
+            {
+              "weight": 30.0,
+              "reps": 12,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        }
+      ]
+    },
+    {
+      "id": "B3-2026-09-18",
+      "date": "2026-09-18",
+      "dayType": "B",
+      "lota": 3,
+      "exercises": [
+        {
+          "name": "Lat pulldown",
+          "sets": [
+            {
+              "weight": 40.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 50.0,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "weight": 50.0,
+              "reps": 10,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        },
+        {
+          "name": "Seated row",
+          "sets": [
+            {
+              "weight": 45.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 50.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 50.0,
+              "reps": 12,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        },
+        {
+          "name": "Face pulls",
+          "sets": [
+            {
+              "weight": 20.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 25.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 25.0,
+              "reps": 12,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        },
+        {
+          "name": "Rear delt fly",
+          "sets": [
+            {
+              "weight": 8.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 8.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 8.0,
+              "reps": 12,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        },
+        {
+          "name": "Bicep curls",
+          "sets": [
+            {
+              "weight": 8.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 8.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 8.0,
+              "reps": 10,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        },
+        {
+          "name": "Triceps kickback",
+          "sets": [
+            {
+              "weight": 8.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 8.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 8.0,
+              "reps": 10,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        },
+        {
+          "name": "Bird dog",
+          "sets": [
+            {
+              "weight": 8.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 8.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 8.0,
+              "reps": 12,
+              "done": true
+            }
+          ],
+          "unit": "reps",
+          "repsOnly": true
+        }
+      ]
+    },
+    {
+      "id": "A4-2026-09-21",
+      "date": "2026-09-21",
+      "dayType": "A",
+      "lota": 4,
+      "exercises": [
+        {
+          "name": "Bekkpressa",
+          "sets": [
+            {
+              "weight": 50.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 50.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 50.0,
+              "reps": 10,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        },
+        {
+          "name": "Incline DB press",
+          "sets": [
+            {
+              "weight": 10.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 10.0,
+              "reps": 8,
+              "done": true
+            },
+            {
+              "weight": 8.0,
+              "reps": 12,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        },
+        {
+          "name": "Overhead press",
+          "sets": [
+            {
+              "weight": 25.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 25.0,
+              "reps": 8,
+              "done": true
+            },
+            {
+              "weight": 25.0,
+              "reps": 12,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        },
+        {
+          "name": "Lateral raises",
+          "sets": [
+            {
+              "weight": 8.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 8.0,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "weight": 8.0,
+              "reps": 6,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        },
+        {
+          "name": "Triceps pushdown",
+          "sets": [
+            {
+              "weight": 30.0,
+              "reps": 8,
+              "done": true
+            },
+            {
+              "weight": 30.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 30.0,
+              "reps": 12,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        },
+        {
+          "name": "Close-grip/diamond",
+          "sets": [
+            {
+              "weight": 25.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 25.0,
+              "reps": 8,
+              "done": true
+            },
+            {
+              "weight": 25.0,
+              "reps": 12,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        },
+        {
+          "name": "Total Abdominal (Technogym)",
+          "sets": [
+            {
+              "weight": 35.0,
+              "reps": 15,
+              "done": true
+            },
+            {
+              "weight": 65.0,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "weight": 35.0,
+              "reps": 15,
+              "done": true
+            }
+          ],
+          "unit": "kg"
+        }
+      ]
+    }
+  ],
+  "migratedFrom": "xlsx",
+  "note": "Dead bug → Total Abdominal (Technogym)"
+}

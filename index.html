@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#1A3A57" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>Rafræni Riddarinn · Æfingadagbók</title>
+  <link rel="icon" type="image/svg+xml" href="brand/favicon.svg" />
+  <link rel="stylesheet" href="fonts/fonts.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand-bar">
+      <img class="brand-crest" src="brand/crest.svg"
+           alt="Skjaldarmerki Rafræna Riddarans — skjöldur með skýi, eldingu og skákriddara" />
+      <div class="brand-lockup">
+        <span class="brand-name">Rafræni Riddarinn</span>
+        <span class="brand-tag">Skýjum Ofar</span>
+        <span class="brand-app">Æfingadagbók</span>
+      </div>
+    </div>
+    <p class="schedule-hint" id="schedule-hint">Áætlun: mán/mið/fös · A/B til skiptis.</p>
+    <nav class="tabs" role="tablist">
+      <button type="button" class="tab active" data-tab="skra">Skrá</button>
+      <button type="button" class="tab" data-tab="tolfraedi">Tölfræði</button>
+      <button type="button" class="tab" data-tab="saga">Saga</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- SKRÁ -->
+    <section id="panel-skra" class="panel active" role="tabpanel">
+      <div class="card">
+        <label class="field" for="date-input">Dagsetning</label>
+        <input type="date" id="date-input" />
+        <div style="height:12px"></div>
+        <label class="field">Dagur</label>
+        <div class="day-toggle">
+          <button type="button" class="day-btn a active" data-day="A">A</button>
+          <button type="button" class="day-btn b" data-day="B">B</button>
+        </div>
+        <button type="button" class="btn btn-secondary" id="btn-use-suggested" style="margin-top:10px">Nota næsta áætlaða dag</button>
+      </div>
+      <div id="exercise-list"></div>
+      <div style="height:64px"></div>
+    </section>
+
+    <!-- TÖLFRÆÐI -->
+    <section id="panel-tolfraedi" class="panel" role="tabpanel">
+      <div class="summary-bar" id="stats-summary"></div>
+
+      <div class="card chart-card">
+        <h3 class="section-title">Volume yfir lotur</h3>
+        <p class="chart-sub">Summa þyngd × reps (kg) per æfingadag</p>
+        <div class="chart-wrap">
+          <canvas id="chart-volume" aria-label="Volume línurit"></canvas>
+        </div>
+      </div>
+
+      <div class="card chart-card">
+        <h3 class="section-title">Besta þyngd</h3>
+        <label class="field" for="best-ex-select">Æfing</label>
+        <select id="best-ex-select" class="select"></select>
+        <div class="chart-wrap" style="margin-top:10px">
+          <canvas id="chart-best" aria-label="Besta þyngd línurit"></canvas>
+        </div>
+      </div>
+
+      <div class="card" id="samantekt-card">
+        <h3 class="section-title">Samantekt</h3>
+        <div class="period-toggle" role="group" aria-label="Tímabil">
+          <button type="button" class="period-btn active" data-period="day">Dagur</button>
+          <button type="button" class="period-btn" data-period="week">Vika</button>
+          <button type="button" class="period-btn" data-period="month">Mánuður</button>
+        </div>
+        <div class="summary-bar" id="period-summary" style="margin-top:12px"></div>
+        <div class="chart-wrap" style="margin-top:8px">
+          <canvas id="chart-period" aria-label="Samantekt volume"></canvas>
+        </div>
+        <div id="period-top" class="period-top"></div>
+        <div id="period-table" class="period-table"></div>
+      </div>
+
+      <div id="stats-content"></div>
+
+      <div class="card">
+        <label class="field">Gögn</label>
+        <div class="btn-row">
+          <button type="button" class="btn btn-secondary" id="btn-export-json">Export JSON</button>
+          <button type="button" class="btn btn-secondary" id="btn-export-csv">Export CSV</button>
+        </div>
+        <label class="btn btn-secondary" style="display:grid;place-items:center;margin-top:8px;cursor:pointer">
+          Import JSON
+          <input type="file" id="import-file" accept="application/json,.json" hidden />
+        </label>
+      </div>
+    </section>
+
+    <!-- SAGA -->
+    <section id="panel-saga" class="panel" role="tabpanel">
+      <div id="history-list"></div>
+      <div id="history-detail" class="hidden"></div>
+    </section>
+  </main>
+
+  <div class="sticky-save" id="sticky-save">
+    <div class="autosave-row">
+      <span id="autosave-status" class="autosave-status hidden" aria-live="polite"></span>
+      <button type="button" class="btn btn-primary" id="btn-save">Vista æfingu</button>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
