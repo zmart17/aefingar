@@ -21,7 +21,7 @@ const EXERCISES = {
     { id: "rear-delt", name: "Rear delt fly", unit: "kg", sets: 3, target: "3x12-15" },
     { id: "bicep", name: "Bicep curls", unit: "kg", sets: 3, target: "3x8-12" },
     { id: "kickback", name: "Triceps kickback", unit: "kg", sets: 3, target: "3x12-15" },
-    { id: "bird-dog", name: "Bird dog", unit: "reps", sets: 3, target: "3x8/hlið", repsOnly: true }
+    { id: "bird-dog", name: "Bird dog", unit: "kg", sets: 3, target: "3x8/hlið" }
   ]
 };
 
@@ -669,7 +669,7 @@ function renderForm() {
     head.className = "ex-head";
     head.innerHTML = `
       <div>
-        <div class="ex-name">${esc(def.name)}</div>
+        <button type="button" class="ex-name ex-photo-btn" data-img="img/${esc(def.id)}.jpg" data-title="${esc(def.name)}">${esc(def.name)} <span class="ex-photo-ico" aria-hidden="true">📷</span></button>
         <div class="ex-meta">${esc(def.target)}</div>
       </div>
       <span class="unit-badge">${esc(unitLabel)}</span>
@@ -1338,6 +1338,33 @@ function bind() {
   });
 }
 
+function setupPhotoModal() {
+  const modal = document.createElement("div");
+  modal.className = "photo-modal";
+  modal.hidden = true;
+  modal.innerHTML = `<div class="photo-card" role="dialog" aria-modal="true">
+      <div class="photo-head"><strong class="photo-title"></strong>
+      <button type="button" class="photo-close" aria-label="Loka">✕</button></div>
+      <img class="photo-img" alt="" /></div>`;
+  document.body.appendChild(modal);
+  const close = () => { modal.hidden = true; document.body.classList.remove("modal-open"); };
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal || e.target.closest(".photo-close")) close();
+  });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") close(); });
+  document.addEventListener("click", (e) => {
+    const btn = e.target.closest(".ex-photo-btn");
+    if (!btn) return;
+    e.preventDefault();
+    modal.querySelector(".photo-title").textContent = btn.dataset.title;
+    const img = modal.querySelector(".photo-img");
+    img.src = btn.dataset.img;
+    img.alt = btn.dataset.title;
+    modal.hidden = false;
+    document.body.classList.add("modal-open");
+  });
+}
+
 async function init() {
   loadSessions();
   await seedIfNeeded();
@@ -1351,6 +1378,7 @@ async function init() {
   }
   state.date = today;
   bind();
+  setupPhotoModal();
   updateScheduleHint();
   renderForm();
   setTab("skra");

@@ -667,3 +667,30 @@ input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
   .brand-name { font-size: 0.95rem; }
   .brand-tag { font-size: 0.7rem; letter-spacing: 0.22em; }
 }
+
+/* Myndir af æfingum */
+.ex-photo-btn {
+  background: none; border: 0; padding: 0; margin: 0; font: inherit; color: inherit;
+  font-weight: 700; font-size: 1.02rem; text-align: left; cursor: pointer; text-decoration: underline dotted rgba(26,58,87,.45);
+  text-underline-offset: 3px;
+}
+.ex-photo-ico { font-size: .85em; opacity: .7; }
+.photo-modal {
+  position: fixed; inset: 0; z-index: 1000; background: rgba(15,25,40,.6);
+  display: flex; align-items: center; justify-content: center; padding: 16px;
+}
+.photo-modal[hidden] { display: none; }
+.photo-card {
+  background: #fff; border-radius: 14px; max-width: 640px; width: 100%;
+  max-height: 92vh; overflow: auto; box-shadow: 0 10px 40px rgba(0,0,0,.3);
+}
+.photo-head {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 12px 14px; border-bottom: 1px solid #e6e2d8; color: #1A3A57;
+}
+.photo-close {
+  background: none; border: 0; font-size: 20px; line-height: 1; cursor: pointer;
+  color: #1A3A57; padding: 4px 8px;
+}
+.photo-img { display: block; width: 100%; height: auto; }
+body.modal-open { overflow: hidden; }
